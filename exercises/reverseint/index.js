@@ -15,8 +15,9 @@
 //SOLUTION 1
 
 function reverseInt(n) {
-  let sign = Math.sign(n)
+  // let sign = Math.sign(n)
   let reversed = n.toString().split('').reverse().join('')
+  return parseInt(reversed) * Math.sign(n)
 
   // if (n < 0) {
   //   return parseInt(reversed) * -1
@@ -24,7 +25,6 @@ function reverseInt(n) {
 
   // return parseInt(reversed)
 
-  return parseInt(reversed) * sign
 }
 
 // reverseInt(n)
